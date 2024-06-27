@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fintech - Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+  
+ <!-- Barra de navegação -->
+ <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="Logo da Fintech">
+       Home
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/perfil.html">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/visãoGeral.html">Visão Geral</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Investimento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Configuração</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <div class="container">
+    <div class="row">
+      <!-- Gráfico de Pizza -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Distribuição de Gastos</h5>
+            <canvas id="gastosChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <!-- Formulário de Inserção de Dados -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Inserir Dados</h5>
+            <form id="dadosForm">
+              <div class="form-group">
+                <label for="categoria">Categoria:</label>
+                <input type="text" class="form-control" id="categoria" required>
+              </div>
+              <div class="form-group">
+                <label for="valor">Valor:</label>
+                <input type="number" class="form-control" id="valor" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Adicionar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabela de Dados -->
+    <div class="row mt-4">
+      <div class="col">
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="thead">
+              <tr>
+                <th scope="col">Categoria</th>
+                <th scope="col">Valor</th>
+              </tr>
+            </thead>
+            <tbody id="tabelaDados">
+              <!-- Linhas de dados inseridos aparecerão aqui -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts do Bootstrap e Chart.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+   <script src="./js/indexjs.js"></script>
+
+</body>
+</html>

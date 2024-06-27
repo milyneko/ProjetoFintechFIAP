@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Cliente</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+</head>
+<body>
+  
+   <!-- Barra de navegação -->
+   <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../images/logo.png" alt="Logo da Fintech">
+        Perfil
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/perfil.html">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/visãoGeral.html">Visão Geral</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Investimento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Configuração</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Conteúdo principal -->
+  <div class="container">
+    <div class="profile-header">
+      <img src="../images/user.png" alt="Foto do Cliente">
+      <h2>Nome do Cliente</h2>
+      <p>Email: cliente@exemplo.com</p>
+      <p>Telefone: (11) 1234-5678</p>
+    </div>
+    
+    <!-- Informações do Cliente -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Informações Pessoais</h5>
+            <p class="card-text"><strong>Endereço:</strong> Rua Exemplo, 123, Bairro, Cidade, Estado, CEP</p>
+            <p class="card-text"><strong>Data de Nascimento:</strong> 01/01/1980</p>
+            <p class="card-text"><strong>CPF:</strong> 123.456.789-00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Dados Financeiros</h5>
+            <p class="card-text"><strong>Banco:</strong> Nome do Banco</p>
+            <p class="card-text"><strong>Agência:</strong> 1234</p>
+            <p class="card-text"><strong>Conta Corrente:</strong> 56789-0</p>
+            <p class="card-text"><strong>Renda Mensal:</strong> R$ 10.000,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

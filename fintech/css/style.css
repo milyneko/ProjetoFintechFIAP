@@ -1,0 +1,38 @@
+
+body {
+  background-color: #f8f9fa; /* Cor de fundo padrão */
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  background-color: #19620a; /* Cor de fundo do menu */
+}
+.navbar-brand img {
+  max-height: 100px; /* Altura máxima do logo */
+  margin-right: 10px; /* Espaçamento do logo com outros elementos */
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff; /* Cor do texto dos links no menu */
+}
+.container {
+  margin-top: 20px; /* Margem superior para separar do topo */
+}
+.card {
+  margin-bottom: 20px; /* Espaçamento entre os cards de informações */
+  
+}
+.thead{
+background-color: #19620a;
+color: #f8f9fa;
+}
+
+.btn{
+  background-color: #19620a;
+  color: #f8f9fa;
+  border-radius: 10px;
+  
+}
+
+.profile-header img{
+  max-height: 150px; /* Altura máxima do logo */
+  margin-right: 10px; /* Espaçamento do logo com outros elementos */
+}
